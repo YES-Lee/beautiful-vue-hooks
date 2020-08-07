@@ -1,0 +1,40 @@
+{
+  "name": "beautiful-vue-hooks",
+  "version": "0.0.1",
+  "description": "A collection of beautiful (and hopefully useful) React hooks to speed-up your components and hooks development",
+  "author": "Johnson",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@vue/composition-api": "^1.0.0-beta.6",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@types/jest": "^26.0.9",
+    "babel-loader": "^8.1.0",
+    "babel-preset-vue": "^2.0.2",
+    "jest": "^26.2.2",
+    "vue-cli-plugin-styleguidist": "~4.29.1",
+    "vue-loader": "^15.9.3",
+    "vuepress": "^1.5.3",
+    "webpack": "^4.44.1"
+  },
+  "bugs": {
+    "url": "https://github.com/YES-Lee/beautiful-vue-hooks/issues"
+  },
+  "homepage": "https://github.com/YES-Lee/beautiful-vue-hooks#readme",
+  "keywords": [
+    "vue",
+    "hooks"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YES-Lee/beautiful-vue-hooks.git"
+  }
+}
