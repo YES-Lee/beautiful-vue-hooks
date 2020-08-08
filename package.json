@@ -4,20 +4,35 @@
   "description": "A collection of beautiful (and hopefully useful) React hooks to speed-up your components and hooks development",
   "author": "Johnson",
   "scripts": {
+    "build": "npm run lint && npx del-cli dist && tsc",
+    "dev": "tsc -w",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext .ts src/",
+    "lint:fix": "eslint --ext .ts src/ --fix"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
-    "@vue/composition-api": "^1.0.0-beta.6",
+    "@vue/composition-api": "^1.0.0-beta.8",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@types/jest": "^26.0.9",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
     "babel-loader": "^8.1.0",
+    "babel-preset-vca-jsx": "^0.3.6",
     "babel-preset-vue": "^2.0.2",
+    "del-cli": "^3.0.1",
+    "eslint": "^7.6.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "glob": "^7.1.6",
     "jest": "^26.2.2",
     "vue-cli-plugin-styleguidist": "~4.29.1",
     "vue-loader": "^15.9.3",

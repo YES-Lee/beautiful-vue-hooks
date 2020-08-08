@@ -34,13 +34,15 @@ export default {
 ## 示例
 
 <ClientOnly>
-  <use-mouse-events-demo1 />
+  <demo>
+    <use-mouse-events-demo />
+  </demo>
 </ClientOnly>
 
 ```vue
 <template>
-  <demo-box>
-    <div id="use-mouse-event-demo1">
+  <div id="use-mouse-event-demo1">
+    <div id="local-area" class="local-area">
       <span v-if="mouseOver">
         Coordinate：({{coordinate.x}}, {{coordinate.y}})
       </span>
@@ -48,48 +50,47 @@ export default {
         鼠标放上去试试
       </span>
     </div>
-  </demo-box>
+    <div class="global-area">
+      Coordinate：({{global.x}}, {{global.y}})
+    </div>
+  </div>
 </template>
 
 <script>
-import { useMouseEvents } from '../../../src'
+import { useMouseEvents } from '../../../dist'
 import { reactive, computed, ref } from '@vue/composition-api'
 
 export default {
   setup() {
     let over = ref(false)
     const coordinate = reactive({ x: 0, y: 0 })
-    const { onMouseMove, onMouseEnter, onMouseLeave } = useMouseEvents('#use-mouse-event-demo1')
+    const global = reactive({ x: 0, y: 0 })
+    const { onMouseMove, onMouseEnter, onMouseLeave } = useMouseEvents('#local-area')
+    const { onMouseMove: onGloubalMouseMove } = useMouseEvents()
     onMouseMove($event => {
-      coordinate.x = $event.layerX
-      coordinate.y = $event.layerY
+      $event.stopPropagation()
+      coordinate.x = $event.offsetX
+      coordinate.y = $event.offsetY
     })
-    onMouseEnter(() => {
+    onGloubalMouseMove($event => {
+      global.x = $event.layerX
+      global.y = $event.layerY
+    })
+    onMouseEnter(($event) => {
+      $event.stopPropagation()
       over.value = true
     })
-    onMouseLeave(() => {
+    onMouseLeave(($event) => {
+      $event.stopPropagation()
       over.value = false
     })
 
     return {
       coordinate,
-      mouseOver: computed(() => over.value)
+      mouseOver: computed(() => over.value),
+      global
     }
   }
 }
 </script>
-
-<style scoped>
-#use-mouse-event-demo1 {
-  width: 360px;
-  height: 150px;
-  line-height: 150px;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 8px;
-  border: 1px solid #eee;
-  color: #888;
-}
-
-</style>
 ```

@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   title: 'Beautiful-Vue-Hooks',
   description: 'A collection of beautiful (and hopefully useful) React hooks to speed-up your components and hooks development',
@@ -9,7 +11,7 @@ module.exports = {
       },
       {
         text: '文档',
-        link: '/useMouseEvents/'
+        link: '/quickStart/'
       }
     ],
     sidebar: [
@@ -18,13 +20,13 @@ module.exports = {
         title: '示例',
         collapsable: false,
         children: [
-          // '/useMouse/',
+          '/useMouse/',
+          '/useMouseState/',
           '/useMouseEvents/',
         ]
       }
     ]
   },
   plugins: [
-
   ]
 }

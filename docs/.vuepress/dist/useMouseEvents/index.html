@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>useMouseEvents | Beautiful-Vue-Hooks</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="A collection of beautiful (and hopefully useful) React hooks to speed-up your components and hooks development">
+    <link rel="preload" href="/assets/css/0.styles.dd92de2a.css" as="style"><link rel="preload" href="/assets/js/app.24475c6f.js" as="script"><link rel="preload" href="/assets/js/2.6103fd60.js" as="script"><link rel="preload" href="/assets/js/11.cd0e35f9.js" as="script"><link rel="prefetch" href="/assets/js/10.22f4f2a4.js"><link rel="prefetch" href="/assets/js/12.9ea7c250.js"><link rel="prefetch" href="/assets/js/3.eec4983b.js"><link rel="prefetch" href="/assets/js/4.61bc4f59.js"><link rel="prefetch" href="/assets/js/5.64e9d437.js"><link rel="prefetch" href="/assets/js/6.530e97c2.js"><link rel="prefetch" href="/assets/js/7.e12711f5.js"><link rel="prefetch" href="/assets/js/8.760b995e.js"><link rel="prefetch" href="/assets/js/9.d926251b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.dd92de2a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Beautiful-Vue-Hooks</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/useMouseEvents/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  文档
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/useMouseEvents/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  文档
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/quickStart/" class="sidebar-link">快速开始</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>示例</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/useMouse/" class="sidebar-link">useMouse</a></li><li><a href="/useMouseState/" class="sidebar-link">useMouseState</a></li><li><a href="/useMouseEvents/" aria-current="page" class="active sidebar-link">useMouseEvents</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/useMouseEvents/#使用" class="sidebar-link">使用</a></li><li class="sidebar-sub-header"><a href="/useMouseEvents/#示例" class="sidebar-link">示例</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="usemouseevents"><a href="#usemouseevents" class="header-anchor">#</a> useMouseEvents</h1> <p>返回一个包含鼠标事件处理函数注册器的对象。接收DOM的<strong>ID</strong>为参数，在组件<code>mounted</code>时给元素注册监听事件。</p> <p><em>由于在<code>setup</code>阶段，组件实例还没有挂载，无法直接获取到DOM节点的引用</em></p> <p>返回的对象包含：<code>onMouseDown</code>, <code>onMouseUp</code>, <code>onMouseEnter</code>, <code>onMouseLeave</code>, <code>onMouseMove</code>, <code>onMouseOver</code></p> <h2 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h2> <p>参数接收DOM节点的ID，如果为空则默认选择<code>document</code>节点。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> useMouseEvents <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'beautiful-vue-hooks'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>
+      onMouseMove<span class="token punctuation">,</span>
+      onMouseEnter<span class="token punctuation">,</span>
+      onMouseLeave<span class="token punctuation">,</span>
+      onMouseDown<span class="token punctuation">,</span>
+      onMouseUp<span class="token punctuation">,</span>
+      onMouseOver
+    <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useMouseEvents</span><span class="token punctuation">(</span><span class="token string">'#element-id'</span><span class="token punctuation">)</span>
+    <span class="token function">onMouseMove</span><span class="token punctuation">(</span><span class="token parameter">$event</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// ...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token operator">...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h2> <!----> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>use-mouse-event-demo1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>local-area<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>local-area<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mouseOver<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        Coordinate：({{coordinate.x}}, {{coordinate.y}})
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">v-else</span><span class="token punctuation">&gt;</span></span>
+        鼠标放上去试试
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>global-area<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      Coordinate：({{global.x}}, {{global.y}})
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useMouseEvents <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../../../dist'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> reactive<span class="token punctuation">,</span> computed<span class="token punctuation">,</span> ref <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@vue/composition-api'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> over <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> coordinate <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span> x<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> y<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> global <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span> x<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> y<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> onMouseMove<span class="token punctuation">,</span> onMouseEnter<span class="token punctuation">,</span> onMouseLeave <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useMouseEvents</span><span class="token punctuation">(</span><span class="token string">'#local-area'</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> onMouseMove<span class="token operator">:</span> onGloubalMouseMove <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useMouseEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">onMouseMove</span><span class="token punctuation">(</span><span class="token parameter">$event</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      $event<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      coordinate<span class="token punctuation">.</span>x <span class="token operator">=</span> $event<span class="token punctuation">.</span>offsetX
+      coordinate<span class="token punctuation">.</span>y <span class="token operator">=</span> $event<span class="token punctuation">.</span>offsetY
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">onGloubalMouseMove</span><span class="token punctuation">(</span><span class="token parameter">$event</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      global<span class="token punctuation">.</span>x <span class="token operator">=</span> $event<span class="token punctuation">.</span>layerX
+      global<span class="token punctuation">.</span>y <span class="token operator">=</span> $event<span class="token punctuation">.</span>layerY
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">onMouseEnter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">$event</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      $event<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      over<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">onMouseLeave</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">$event</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      $event<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      over<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      coordinate<span class="token punctuation">,</span>
+      mouseOver<span class="token operator">:</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> over<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      global
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/useMouseState/" class="prev">
+        useMouseState
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.24475c6f.js" defer></script><script src="/assets/js/2.6103fd60.js" defer></script><script src="/assets/js/11.cd0e35f9.js" defer></script>
+  </body>
+</html>
