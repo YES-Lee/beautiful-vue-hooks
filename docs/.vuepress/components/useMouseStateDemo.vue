@@ -4,7 +4,7 @@
       Coordinate：({{clientX}}, {{clientY}})
     </div>
     <div class="global-area">
-      Coordinate：({{screenX}}, {{screenY}})
+      Coordinate：({{clientXG}}, {{clientYG}})
     </div>
   </div>
 </template>
@@ -16,13 +16,13 @@ import { reactive, computed, ref } from '@vue/composition-api'
 export default {
   setup() {
     const { clientX, clientY } = useMouseState('#local-area')
-    const { screenX, screenY } = useMouseState()
+    const { clientX: clientXG, clientY: clientYG } = useMouseState()
 
     return {
       clientX,
       clientY,
-      screenX,
-      screenY
+      clientXG,
+      clientYG
     }
   }
 }

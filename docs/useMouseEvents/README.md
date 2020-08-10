@@ -33,11 +33,9 @@ export default {
 
 ## 示例
 
-<ClientOnly>
-  <demo>
-    <use-mouse-events-demo />
-  </demo>
-</ClientOnly>
+<demo>
+  <use-mouse-events-demo />
+</demo>
 
 ```vue
 <template>

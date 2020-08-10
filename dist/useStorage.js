@@ -7,7 +7,6 @@ var composition_api_1 = require("@vue/composition-api");
 var safelyParseJson_1 = __importDefault(require("./utils/safelyParseJson"));
 var isClient_1 = __importDefault(require("./utils/isClient"));
 var isAPISupported_1 = __importDefault(require("./utils/isAPISupported"));
-var isDevelopment_1 = __importDefault(require("./utils/isDevelopment"));
 /**
  *
  */
@@ -22,10 +21,8 @@ var useStorage = function (type) {
      */
     return function (storageKey, defaultValue) {
         if (!isClient_1.default) {
-            if (isDevelopment_1.default) {
-                // eslint-disable-next-line no-console
-                console.warn("Please be aware that " + storageName + " could not be available during SSR");
-            }
+            // eslint-disable-next-line no-console
+            console.warn("Please be aware that " + storageName + " could not be available during SSR");
             return [JSON.stringify(defaultValue), function () { return undefined; }];
         }
         var storage = window[storageName];

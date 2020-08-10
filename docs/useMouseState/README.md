@@ -29,11 +29,9 @@ export default {
 
 ## 示例
 
-<ClientOnly>
-  <demo>
-    <use-mouse-state-demo />
-  </demo>
-</ClientOnly>
+<demo>
+  <use-mouse-state-demo />
+</demo>
 
 ```vue
 <template>

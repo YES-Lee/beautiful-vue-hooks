@@ -1,7 +1,7 @@
 <template>
   <div id="home-demo">
     <div id="demo-area">
-      Coordinate：({{screenX}}, {{screenY}})
+      Coordinate：({{clientX}}, {{clientY}})
     </div>
   </div>
 </template>
@@ -11,11 +11,11 @@ import { useMouseState } from '../../../dist'
 
 export default {
   setup() {
-    const { screenX, screenY } = useMouseState()
+    const { clientX, clientY } = useMouseState()
 
     return {
-      screenX,
-      screenY
+      clientX,
+      clientY
     }
   }
 }

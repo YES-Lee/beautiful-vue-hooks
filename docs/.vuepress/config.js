@@ -25,6 +25,7 @@ module.exports = {
         title: '示例',
         collapsable: false,
         children: [
+          '/useStorage/',
           '/useMouse/',
           '/useMouseState/',
           '/useMouseEvents/',

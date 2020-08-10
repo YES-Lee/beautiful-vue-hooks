@@ -1,1 +1,1 @@
-{"version":3,"file":"useMouseState.d.ts","sourceRoot":"","sources":["../src/useMouseState.ts"],"names":[],"mappings":"AAUA;;;;GAIG;AACH,QAAA,MAAM,aAAa;;;;;CAkBlB,CAAC;AAEF,eAAe,aAAa,CAAC"}
+{"version":3,"file":"useMouseState.d.ts","sourceRoot":"","sources":["../src/useMouseState.ts"],"names":[],"mappings":"AACA,OAAO,EAAsB,WAAW,EAAE,MAAM,sBAAsB,CAAC;AAEvE;;;;GAIG;AACH,QAAA,MAAM,aAAa;;;;;CAiBlB,CAAC;AAEF,eAAe,aAAa,CAAC"}

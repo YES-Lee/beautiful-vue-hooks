@@ -3,13 +3,9 @@ home: true
 footer: MIT Licensed | Copyright © 2020-present Johnson
 ---
 
-<ClientOnly>
-  <action-button title="快速上手 →" link="https://yes-lee.github.io/beautiful-vue-hooks/quickStart/" />
-</ClientOnly>
+<action-button title="快速上手 →" link="https://yes-lee.github.io/beautiful-vue-hooks/quickStart/" />
 
-<ClientOnly>
-  <home-demo />
-</ClientOnly>
+<home-demo />
 
 ```javascript
 import { useMouseState } from '../../../dist'
