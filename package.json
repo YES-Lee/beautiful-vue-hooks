@@ -1,6 +1,6 @@
 {
   "name": "beautiful-vue-hooks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collection of beautiful (and hopefully useful) React hooks to speed-up your components and hooks development",
   "author": "Johnson",
   "scripts": {
@@ -12,6 +12,7 @@
     "lint:fix": "eslint --ext .ts src/ --fix"
   },
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
     "@vue/composition-api": "^1.0.0-beta.8",
@@ -21,6 +22,7 @@
     "@babel/core": "^7.11.1",
     "@types/jest": "^26.0.9",
     "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@vue/test-utils": "^1.0.3",
     "babel-loader": "^8.1.0",
     "babel-preset-vca-jsx": "^0.3.6",
     "babel-preset-vue": "^2.0.2",

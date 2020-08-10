@@ -1,0 +1,1 @@
+{"version":3,"file":"safelyParseJson.js","sourceRoot":"","sources":["../../src/utils/safelyParseJson.ts"],"names":[],"mappings":";;AAAA,IAAM,eAAe,GAAG,UAAU,WAAmB;IACnD,IAAI;QACF,OAAO,IAAI,CAAC,KAAK,CAAC,WAAW,CAAC,CAAC;KAChC;IAAC,OAAO,CAAC,EAAE;QACV,OAAO,IAAI,CAAC;KACb;AACH,CAAC,CAAC;AAEF,kBAAe,eAAe,CAAC"}
