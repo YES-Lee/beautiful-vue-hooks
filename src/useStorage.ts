@@ -17,7 +17,7 @@ const useStorage = (type: 'local' | 'session') => {
   /**
    * hook
    */
-  return <T = any>(storageKey: string, defaultValue: T) => {
+  return <T = any>(storageKey: string, defaultValue: T): [any, any] => {
     if (!isClient) {
       // eslint-disable-next-line no-console
       console.warn(`Please be aware that ${storageName} could not be available during SSR`);
@@ -31,6 +31,7 @@ const useStorage = (type: 'local' | 'session') => {
 
     const setValue = (v: any): void => {
       storage.setItem(storageKey, JSON.stringify(v));
+      value.value = v
     }
 
     return [computed(() => value.value), setValue];

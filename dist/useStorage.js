@@ -30,6 +30,7 @@ var useStorage = function (type) {
         storage.setItem(storageKey, JSON.stringify(value.value));
         var setValue = function (v) {
             storage.setItem(storageKey, JSON.stringify(v));
+            value.value = v;
         };
         return [composition_api_1.computed(function () { return value.value; }), setValue];
     };

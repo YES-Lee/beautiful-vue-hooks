@@ -8,7 +8,7 @@
 
 参数接收DOM节点的ID，如果为空则默认选择`document`节点。
 
-返回结果参考[`useMouseState`](/useMouseState/)和[`useMouseEvents`](useMouseEvents/)。
+返回结果参考[useMouseState](/useMouseState/)和[useMouseEvents](useMouseEvents/)。
 
 ```javascript
 import { useMouse } from 'beautiful-vue-hooks'
@@ -20,3 +20,7 @@ export default {
   }
 }
 ```
+
+## 示例
+
+参考[useMouseState](/useMouseState/#示例)和[useMouseEvents](useMouseEvents/#示例)。
