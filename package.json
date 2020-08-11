@@ -1,7 +1,7 @@
 {
   "name": "beautiful-vue-hooks",
   "version": "0.0.4",
-  "description": "A collection of beautiful (and hopefully useful) React hooks to speed-up your components and hooks development",
+  "description": "🌟A collection of beautiful (and hopefully useful) React hooks to speed-up your components and hooks development",
   "author": "Johnson",
   "scripts": {
     "build": "npm run lint && npx del-cli dist && tsc",
@@ -49,10 +49,11 @@
   "bugs": {
     "url": "https://github.com/YES-Lee/beautiful-vue-hooks/issues"
   },
-  "homepage": "https://github.com/YES-Lee/beautiful-vue-hooks#readme",
+  "homepage": "https://yes-lee.github.io/beautiful-vue-hooks/",
   "keywords": [
     "vue",
-    "hooks"
+    "hooks",
+    "composition api"
   ],
   "license": "MIT",
   "repository": {
