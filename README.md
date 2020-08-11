@@ -6,6 +6,9 @@
 
 ## Hooks列表
 
+* [useGlobalEvent](https://yes-lee.github.io/beautiful-vue-hooks/useGlobalEvent/)
+* [useWindowResize](https://yes-lee.github.io/beautiful-vue-hooks/useWindowResize/)
+* [useWindowScroll](https://yes-lee.github.io/beautiful-vue-hooks/useWindowScroll/)
 * [useStorage](https://yes-lee.github.io/beautiful-vue-hooks/useStorage/)
 * [useLocalStorage](https://yes-lee.github.io/beautiful-vue-hooks/useLocalStorage/)
 * [useSessionStorage](https://yes-lee.github.io/beautiful-vue-hooks/useSessionStorage/)

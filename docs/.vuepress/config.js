@@ -32,6 +32,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/useGlobalEvent/',
+          '/useWindowResize/',
+          '/useWindowScroll/',
           '/useStorage/',
           '/useLocalStorage/',
           '/useSessionStorage/',

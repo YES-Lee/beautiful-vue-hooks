@@ -21,9 +21,6 @@ var defaultOptions = {
     once: false,
     passive: false,
 };
-/**
- * Accepts an event name then returns a callback setter for a function to be performed when the event triggers.
- */
 function useGlobalEvent(eventName, options, fn) {
     if (options === void 0) { options = defaultOptions; }
     var _a = createHandlerSetter_1.default(fn), callbackRef = _a[0], setCallbackRef = _a[1];

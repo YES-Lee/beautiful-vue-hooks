@@ -16,11 +16,13 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "@vue/composition-api": "^1.0.0-beta.8",
+    "lodash.throttle": "^4.1.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@types/jest": "^26.0.9",
+    "@types/lodash.throttle": "^4.1.6",
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "@vue/test-utils": "^1.0.3",
     "babel-loader": "^8.1.0",

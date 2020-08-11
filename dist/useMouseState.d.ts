@@ -1,8 +1,8 @@
 import { ComputedRef } from '@vue/composition-api';
 /**
- * Returns the current state (position) of the mouse pointer.
- * It possibly accepts a DOM ref representing the mouse target.
- * If a target is not provided the state will be caught globally.
+ * 返回鼠标当前位置状态
+ * 接收一个目标的ID
+ * 如果目标查询不到，则会注册事件到document
  */
 declare const useMouseState: (selector?: string | undefined) => {
     clientX: ComputedRef<number>;

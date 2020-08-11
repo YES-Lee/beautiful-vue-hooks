@@ -1,1 +1,1 @@
-{"version":3,"file":"useSessionStorage.js","sourceRoot":"","sources":["../src/useSessionStorage.ts"],"names":[],"mappings":";;;;;AAAA,4DAAsC;AAEtC;;GAEG;AACH,IAAM,iBAAiB,GAAG,oBAAU,CAAC,SAAS,CAAC,CAAC;AAEhD,kBAAe,iBAAiB,CAAC"}
+{"version":3,"file":"useSessionStorage.js","sourceRoot":"","sources":["../src/useSessionStorage.ts"],"names":[],"mappings":";;;;;AAAA,4DAAsC;AAEtC,IAAM,iBAAiB,GAAG,oBAAU,CAAC,SAAS,CAAC,CAAC;AAEhD,kBAAe,iBAAiB,CAAC"}

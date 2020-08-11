@@ -1,0 +1,1 @@
+{"version":3,"file":"useThrottledFn.js","sourceRoot":"","sources":["../src/useThrottledFn.ts"],"names":[],"mappings":";;;;;AAAA,oEAAsC;AAEtC,IAAM,cAAc,GAAG;IACrB,OAAO,EAAE,KAAK;IACd,QAAQ,EAAE,IAAI;CACf,CAAA;AAED,SAAwB,cAAc,CAAE,EAAO,EAAE,IAAU,EAAE,OAAwB;IAApC,qBAAA,EAAA,UAAU;IAAE,wBAAA,EAAA,wBAAwB;IACnF,OAAO,yBAAQ,CAAC,EAAE,EAAE,IAAI,EAAE,OAAO,CAAC,CAAA;AACpC,CAAC;AAFD,iCAEC"}

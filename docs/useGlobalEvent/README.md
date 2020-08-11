@@ -7,6 +7,8 @@
 第一个参数为事件名称，第二个参数为事件注册选项，具体看[addEventListener文档](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)
 
 ```javascript
+import { useGlobalEvent } from 'beautiful-vue-hooks'
+
 export default {
   setup () {
     const onWindowResize = useGlobalEvent('resize', {/** options */})
@@ -21,4 +23,6 @@ export default {
 
 尝试调整浏览器窗口宽度
 
-<use-global-event-demo />
+<ClientOnly>
+  <use-global-event-demo />
+</ClientOnly>

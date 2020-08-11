@@ -6,9 +6,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var useMouseEvents_1 = __importDefault(require("./useMouseEvents"));
 var composition_api_1 = require("@vue/composition-api");
 /**
- * Returns the current state (position) of the mouse pointer.
- * It possibly accepts a DOM ref representing the mouse target.
- * If a target is not provided the state will be caught globally.
+ * 返回鼠标当前位置状态
+ * 接收一个目标的ID
+ * 如果目标查询不到，则会注册事件到document
  */
 var useMouseState = function (selector) {
     var state = composition_api_1.reactive({ clientX: 0, clientY: 0, screenX: 0, screenY: 0 });

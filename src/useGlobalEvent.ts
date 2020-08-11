@@ -13,9 +13,6 @@ const defaultOptions: useGloubalEventOptions = {
   passive: false,
 };
 
-/**
- * Accepts an event name then returns a callback setter for a function to be performed when the event triggers.
- */
 export default function useGlobalEvent (eventName: string, options = defaultOptions, fn: any) {
   const [callbackRef, setCallbackRef] = createHandlerSetter(fn);
   const opts = { ...defaultOptions, ...(options || {}) };

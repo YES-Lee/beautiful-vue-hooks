@@ -2,9 +2,9 @@ import useMouseEvents from './useMouseEvents';
 import { reactive, computed, ComputedRef } from '@vue/composition-api';
 
 /**
- * Returns the current state (position) of the mouse pointer.
- * It possibly accepts a DOM ref representing the mouse target.
- * If a target is not provided the state will be caught globally.
+ * 返回鼠标当前位置状态
+ * 接收一个目标的ID
+ * 如果目标查询不到，则会注册事件到document
  */
 const useMouseState = (selector?: string): { clientX: ComputedRef<number>; clientY: ComputedRef<number>; screenX: ComputedRef<number>; screenY: ComputedRef<number>} => {
   const state = reactive({ clientX: 0, clientY: 0, screenX: 0, screenY: 0 });

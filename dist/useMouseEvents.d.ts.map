@@ -1,1 +1,1 @@
-{"version":3,"file":"useMouseEvents.d.ts","sourceRoot":"","sources":["../src/useMouseEvents.ts"],"names":[],"mappings":"AAgCA;;;;;;;;;;;;;;GAcG;AACH,QAAA,MAAM,cAAc,wCA8BnB,CAAA;AAED,eAAe,cAAc,CAAA"}
+{"version":3,"file":"useMouseEvents.d.ts","sourceRoot":"","sources":["../src/useMouseEvents.ts"],"names":[],"mappings":"AAgCA;;;;;;GAMG;AACH,QAAA,MAAM,cAAc,wCA8BnB,CAAA;AAED,eAAe,cAAc,CAAA"}
