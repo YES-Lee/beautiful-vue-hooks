@@ -5,7 +5,8 @@ module.exports = {
   description: '为Vue3开发的一个优美的Hooks集合',
   base: '/beautiful-vue-hooks/',
   themeConfig: {
-    lastUpdated: 'Last Updated',
+    lastUpdated: '最后更新',
+    smoothScroll: true,
     nav: [
       {
         text: '首页',
@@ -30,6 +31,7 @@ module.exports = {
         title: '示例',
         collapsable: false,
         children: [
+          '/useGlobalEvent/',
           '/useStorage/',
           '/useLocalStorage/',
           '/useSessionStorage/',

@@ -12,4 +12,6 @@ var useLocalStorage_1 = require("./useLocalStorage");
 exports.useLocalStorage = useLocalStorage_1.default;
 var useSessionStorage_1 = require("./useSessionStorage");
 exports.useSessionStorage = useSessionStorage_1.default;
+var useGlobalEvent_1 = require("./useGlobalEvent");
+exports.useGlobalEvent = useGlobalEvent_1.default;
 //# sourceMappingURL=index.js.map
