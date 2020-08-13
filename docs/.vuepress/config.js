@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   title: 'Beautiful-Vue-Hooks',
   description: '为Vue3开发的一个优美的Hooks集合',
-  base: '/beautiful-vue-hooks/',
+  // base: '/beautiful-vue-hooks/',
   themeConfig: {
     lastUpdated: '最后更新',
     smoothScroll: true,
