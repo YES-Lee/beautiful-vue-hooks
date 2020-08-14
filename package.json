@@ -1,6 +1,6 @@
 {
   "name": "beautiful-vue-hooks",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "🌟A collection of beautiful (and hopefully useful) React hooks to speed-up your components and hooks development",
   "author": "Johnson",
   "scripts": {
