@@ -1,4 +1,4 @@
-# beautiful-vue-hooks
+# 🌟beautiful-vue-hooks🌟
 
 ![Downloads](https://img.shields.io/npm/dt/beautiful-vue-hooks) ![License](https://img.shields.io/npm/l/beautiful-vue-hooks) ![Version](https://img.shields.io/npm/v/beautiful-vue-hooks) ![Build](https://img.shields.io/github/workflow/status/YES-Lee/beautiful-vue-hooks/Node.js%20CI)
 

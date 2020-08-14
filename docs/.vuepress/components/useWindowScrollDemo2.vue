@@ -1,7 +1,7 @@
 <template>
   <demo :code="code" lang="javascript">
     <div id="use-window-scroll-c-1">
-      window width: {{scrollY}}
+      window.scrollY: {{scrollY}}
     </div>
   </demo>
 </template>
