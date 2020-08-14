@@ -1,5 +1,7 @@
 # beautiful-vue-hooks
 
+![Downloads](https://img.shields.io/npm/dt/beautiful-vue-hooks) ![License](https://img.shields.io/npm/l/beautiful-vue-hooks) ![Version](https://img.shields.io/npm/v/beautiful-vue-hooks)
+
 为Vue3开发的一个优美的Hooks集合，帮助你快速、高效的开发应用，减少大量重复的代码。
 
 [使用文档：https://beautiful-vue-hooks.johnsonlee.site/](https://beautiful-vue-hooks.johnsonlee.site/)
