@@ -17,6 +17,8 @@
 * [useMouse](https://beautiful-vue-hooks.johnsonlee.site/useMouse/)
 * [useMouseState](https://beautiful-vue-hooks.johnsonlee.site/useMouseState/)
 * [useMouseEvents](https://beautiful-vue-hooks.johnsonlee.site/useMouseEvents/)
+* [useDebouncedFn](https://beautiful-vue-hooks.johnsonlee.site/useDebouncedFn/)
+* [useThrottledFn](https://beautiful-vue-hooks.johnsonlee.site/useThrottledFn/)
 
 ## LICENSE
 
