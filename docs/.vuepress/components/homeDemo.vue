@@ -1,9 +1,11 @@
 <template>
-  <div id="home-demo">
-    <div id="demo-area">
-      Coordinate：({{clientX}}, {{clientY}})
+  <demo :code="code" lang="javascript">
+    <div id="home-demo">
+      <div id="demo-area">
+        Coordinate：({{clientX}}, {{clientY}})
+      </div>
     </div>
-  </div>
+  </demo>
 </template>
 
 <script>
@@ -16,6 +18,23 @@ export default {
     return {
       clientX,
       clientY
+    }
+  },
+  data () {
+    return {
+      code: `
+        import { useMouseState } from 'beautiful-vue-hooks'
+
+        export default {
+          setup() {
+            const { clientX, clientY } = useMouseState()
+            return {
+              clientX,
+              clientY
+            }
+          }
+        }
+      `
     }
   }
 }

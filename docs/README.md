@@ -16,17 +16,3 @@ footer: MIT Licensed | Copyright © 2020-present Johnson
 ---
 
 <home-demo />
-
-```javascript
-import { useMouseState } from 'beautiful-vue-hooks'
-
-export default {
-  setup() {
-    const { clientX, clientY } = useMouseState()
-    return {
-      clientX,
-      clientY
-    }
-  }
-}
-```

@@ -8,7 +8,7 @@ export default {
   data () {
     return {
       code: `
-        import { useMouseEvents } from '../../../dist'
+        import { useMouseEvents } from 'beautiful-vue-hooks'
         import { reactive, computed, ref } from '@vue/composition-api'
         export default {
           setup() {

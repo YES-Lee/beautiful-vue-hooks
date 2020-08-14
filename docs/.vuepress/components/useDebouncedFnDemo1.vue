@@ -1,12 +1,12 @@
 <template>
   <demo :code="code" lang="javascript">
-    <div id="use-throttled-fn-c-1">
+    <div id="use-debounced-fn-c-1">
       window width: {{width}}
     </div>
   </demo>
 </template>
 <script>
-import { useWindowResize, useThrottledFn } from '../../../dist'
+import { useWindowResize, useDebouncedFn } from '../../../dist'
 import { ref, computed } from '@vue/composition-api'
 
 export default {
@@ -14,11 +14,11 @@ export default {
     const width = ref(window.innerWidth)
     const onWindowResize = useWindowResize()
 
-    const throttledHandler = useThrottledFn(() => {
+    const debouncedHandler = useDebouncedFn(() => {
       width.value = window.innerWidth
     }, 600)
 
-    onWindowResize(throttledHandler)
+    onWindowResize(debouncedHandler)
   
     return {
       width: computed(() => width.value)
@@ -27,7 +27,7 @@ export default {
   data () {
     return {
       code: `
-        import { useWindowResize, useThrottledFn } from 'beautiful-vue-hooks'
+        import { useWindowResize, useDebouncedFn } from 'beautiful-vue-hooks'
         import { ref, computed } from '@vue/composition-api'
 
         export default {
@@ -35,11 +35,11 @@ export default {
             const width = ref(window.innerWidth)
             const onWindowResize = useWindowResize()
 
-            const throttledHandler = useThrottledFn(() => {
+            const debouncedHandler = useDebouncedFn(() => {
               width.value = window.innerWidth
             }, 600)
 
-            onWindowResize(throttledHandler)
+            onWindowResize(debouncedHandler)
           
             return {
               width: computed(() => width.value)
@@ -52,7 +52,7 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-#use-throttled-fn-c-1 {
+#use-debounced-fn-c-1 {
   height: 88px;
   line-height: 88px;
   text-align: center;

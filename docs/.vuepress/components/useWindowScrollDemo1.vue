@@ -25,7 +25,7 @@ export default {
   data () {
     return {
       code: `
-        import { useWindowScroll } from '../../../dist'
+        import { useWindowScroll } from 'beautiful-vue-hooks'
         import { ref, computed } from '@vue/composition-api'
 
         export default {

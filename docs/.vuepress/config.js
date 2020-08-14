@@ -41,6 +41,7 @@ module.exports = {
           '/useMouseState/',
           '/useMouseEvents/',
           '/useThrottledFn/',
+          '/useDebouncedFn/',
         ]
       }
     ]
