@@ -1,6 +1,6 @@
 {
   "name": "beautiful-vue-hooks",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "🌟A collection of beautiful (and hopefully useful) React hooks to speed-up your components and hooks development",
   "author": "Johnson",
   "scripts": {
@@ -53,7 +53,7 @@
   "bugs": {
     "url": "https://github.com/YES-Lee/beautiful-vue-hooks/issues"
   },
-  "homepage": "https://yes-lee.github.io/beautiful-vue-hooks/",
+  "homepage": "https://beautiful-vue-hooks.johnsonlee.site/",
   "keywords": [
     "vue",
     "hooks",
