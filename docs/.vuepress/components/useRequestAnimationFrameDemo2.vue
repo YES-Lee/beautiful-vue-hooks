@@ -16,7 +16,7 @@ export default {
     const rad = ref(0)
     const options = {
       startAt: 0,
-      increment: 0.5,
+      increment: 1,
       finishAt: -1
     }
     useRequestAnimationFrame((progress, next) => {
@@ -39,7 +39,7 @@ export default {
             const rad = ref(0)
             const options = {
               startAt: 0,
-              increment: 0.5,
+              increment: 1,
               finishAt: -1
             }
             useRequestAnimationFrame((progress, next) => {
