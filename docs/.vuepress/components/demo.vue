@@ -4,7 +4,7 @@
       <div class="component-wrapper-demo">
         <slot />
       </div>
-      <div class="code-content" v-highlight style="height: 0;" ref="content">
+      <div class="code-content" style="height: 0;" ref="content">
         <div class="code-content-height" ref="contentHeight">
           <pre><code :class="`language-${lang}`">{{code.replace(/^ {8}/gm, '').trim()}}</code></pre>
         </div>
@@ -56,6 +56,7 @@
       //得到所有代码区域的高度
       getCodesHeight () {
         const contentHeight = this.$refs.contentHeight
+        this.$highlight(contentHeight)
         this.codeParent = this.$refs.content
         this.codeHeight = contentHeight.getBoundingClientRect().height
         this.isShow = false

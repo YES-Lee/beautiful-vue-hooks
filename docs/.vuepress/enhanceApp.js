@@ -7,10 +7,10 @@ export default ({
   Vue
 }) => {
   Vue.use(CompositionApi)
+  Vue.prototype.$highlight = el => {
+    hljs.highlightBlock(el)
+  }
   Vue.directive('highlight',function (el) {
-    const blocks = el.querySelectorAll('pre code');
-    blocks.forEach((block)=>{
-      hljs.highlightBlock(block)
-    })
+    hljs.highlightBlock(el)
   })
 }
