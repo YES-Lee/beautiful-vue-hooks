@@ -1,22 +1,16 @@
 # 快速开始
 
-## 安装
+[Hook](https://zh-hans.reactjs.org/docs/hooks-overview.html)最初是react在16.8版本中正式发布的一个特性，后来随着vue-next对react的借鉴，通过[@vue/composition-api](https://github.com/vuejs/composition-api)插件，我们可以仿照react封装一些hook，一定程度上替换mixin，作为新的逻辑复用解决方案。
 
-```bash
-yarn add beautiful-vue-hooks
-// or
-npm install beautiful-vue-hooks
-```
+这是一个使用[@vue/composition-api](https://github.com/vuejs/composition-api)开发的hook集合，包含了web应用中常用的功能逻辑，通过简单的一行代码取代重复啰嗦的代码，提高开发效率。
 
-## 使用
-
-在vue2.x中使用需要先安装`@vue/composition-api`插件
+::: warning
+在使用`beautiful-vue-hooks`之前，需要先了解[@vue/composition-api](https://github.com/vuejs/composition-api)，并且在项目中注册该插件。
+:::
 
 ```bash
 yarn add @vue/composition-api
 ```
-
-然后在main.js中注册`composition-api`插件
 
 ```javascript
 // main.js
@@ -26,7 +20,15 @@ import VueCompositionApi from '@vue/composition-api'
 Vue.use(VueCompositionApi)
 ```
 
-在组件中使用`beautiful-vue-hooks`
+## 安装
+
+```bash
+yarn add beautiful-vue-hooks
+// or
+npm install beautiful-vue-hooks
+```
+
+## 使用
 
 ```javascript
 import { useMouseEvents } from 'beautiful-vue-hooks'

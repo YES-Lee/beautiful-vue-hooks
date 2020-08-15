@@ -42,10 +42,12 @@ module.exports = {
           '/useMouseEvents/',
           '/useThrottledFn/',
           '/useDebouncedFn/',
+          '/useRequestAnimationFrame/',
         ]
       }
     ]
   },
   plugins: [
+    '@vuepress/back-to-top'
   ]
 }

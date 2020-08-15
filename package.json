@@ -12,7 +12,6 @@
     "lint:fix": "eslint --ext .ts src/ --fix"
   },
   "main": "dist/index.js",
-  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
     "@vue/composition-api": "^1.0.0-beta.8",
@@ -28,6 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "@typescript-eslint/parser": "^3.9.0",
     "@vue/test-utils": "^1.0.3",
+    "@vuepress/plugin-back-to-top": "^1.5.3",
     "babel-loader": "^8.1.0",
     "babel-preset-vca-jsx": "^0.3.6",
     "babel-preset-vue": "^2.0.2",
