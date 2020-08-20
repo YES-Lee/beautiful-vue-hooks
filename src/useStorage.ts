@@ -34,7 +34,7 @@ const useStorage = (type: 'local' | 'session') => {
       value.value = v
     }
 
-    return [computed(() => value.value), setValue];
+    return [value, setValue];
   };
 };
 

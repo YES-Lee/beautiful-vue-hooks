@@ -17,7 +17,7 @@ export default {
     })
   
     return {
-      scrollY: computed(() => scrollY.value)
+      scrollY
     }
   },
   data () {
@@ -34,7 +34,7 @@ export default {
             })
 
             return {
-              width: computed(() => scrollY.value)
+              scrollY
             }
           }
         }

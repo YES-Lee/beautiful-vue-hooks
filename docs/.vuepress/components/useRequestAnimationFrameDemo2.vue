@@ -25,7 +25,7 @@ export default {
     }, options)
 
     return {
-      rad: computed(() => rad.value)
+      rad
     }
   },
   data () {
@@ -48,7 +48,7 @@ export default {
             }, options)
 
             return {
-              rad: computed(() => rad.value)
+              rad
             }
           }
         }

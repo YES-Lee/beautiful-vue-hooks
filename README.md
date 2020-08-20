@@ -27,6 +27,7 @@ npm install beautiful-vue-hooks
 * [useMouseEvents](https://beautiful-vue-hooks.johnsonlee.site/useMouseEvents/)
 * [useDebouncedFn](https://beautiful-vue-hooks.johnsonlee.site/useDebouncedFn/)
 * [useThrottledFn](https://beautiful-vue-hooks.johnsonlee.site/useThrottledFn/)
+* [useRequestAnimationFrame](https://beautiful-vue-hooks.johnsonlee.site/useRequestAnimationFrame/)
 
 ## LICENSE
 

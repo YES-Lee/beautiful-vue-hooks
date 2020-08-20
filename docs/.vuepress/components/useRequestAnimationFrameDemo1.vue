@@ -21,7 +21,7 @@ export default {
     })
 
     return {
-      left: computed(() => left.value)
+      left
     }
   },
   data () {
@@ -40,7 +40,7 @@ export default {
             })
 
             return {
-              left: computed(() => left.value)
+              left
             }
           }
         }

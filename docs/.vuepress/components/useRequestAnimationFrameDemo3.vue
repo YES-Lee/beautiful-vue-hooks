@@ -32,8 +32,8 @@ export default {
     })
 
     return {
-      left: computed(() => left.value),
-      finished: computed(() => finished.value)
+      left,
+      finished
     }
   },
   data () {
@@ -57,8 +57,8 @@ export default {
             })
 
             return {
-              left: computed(() => left.value),
-              finished: computed(() => finished.value)
+              left,
+              finished
             }
           }
         }

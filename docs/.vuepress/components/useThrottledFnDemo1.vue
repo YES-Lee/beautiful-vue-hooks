@@ -21,7 +21,7 @@ export default {
     onWindowResize(throttledHandler)
   
     return {
-      width: computed(() => width.value)
+      width
     }
   },
   data () {
@@ -42,7 +42,7 @@ export default {
             onWindowResize(throttledHandler)
           
             return {
-              width: computed(() => width.value)
+              width
             }
           }
         }

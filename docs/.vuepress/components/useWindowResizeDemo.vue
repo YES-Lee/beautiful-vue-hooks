@@ -19,7 +19,7 @@ export default {
     })
 
     return {
-      width: computed(() => width.value)
+      width
     }
   },
   data () {
@@ -38,7 +38,7 @@ export default {
             })
 
             return {
-              width: computed(() => width.value)
+              width
             }
           }
         }

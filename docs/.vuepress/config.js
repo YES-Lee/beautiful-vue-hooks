@@ -43,6 +43,7 @@ module.exports = {
           '/useThrottledFn/',
           '/useDebouncedFn/',
           '/useRequestAnimationFrame/',
+          '/useOnlineState/',
         ]
       }
     ]

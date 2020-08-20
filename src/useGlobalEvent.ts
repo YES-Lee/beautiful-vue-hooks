@@ -13,7 +13,7 @@ const defaultOptions: useGloubalEventOptions = {
   passive: false,
 };
 
-export default function useGlobalEvent (eventName: string, options = defaultOptions, fn: any) {
+export default function useGlobalEvent (eventName: string, options = defaultOptions, fn?: any) {
   const [callbackRef, setCallbackRef] = createHandlerSetter(fn);
   const opts = { ...defaultOptions, ...(options || {}) };
 

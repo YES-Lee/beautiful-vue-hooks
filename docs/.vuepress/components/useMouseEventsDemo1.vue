@@ -31,7 +31,7 @@ export default {
 
             return {
               coordinate,
-              mouseOver: computed(() => over.value)
+              mouseOver: over
             }
           }
         }
