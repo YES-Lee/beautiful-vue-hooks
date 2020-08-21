@@ -1,7 +1,6 @@
 import CompositionApi from '@vue/composition-api'
 import hljs from 'highlight.js'
-import 'highlight.js/styles/color-brewer.css' 
-
+import 'highlight.js/styles/color-brewer.css'
 
 export default ({
   Vue

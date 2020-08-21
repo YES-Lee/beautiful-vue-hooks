@@ -1,4 +1,4 @@
-import { ref, computed } from '@vue/composition-api';
+import { ref } from '@vue/composition-api';
 import safelyParseJson from './utils/safelyParseJson';
 import isClient from './utils/isClient';
 import isAPISupported from './utils/isAPISupported';

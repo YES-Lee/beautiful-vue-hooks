@@ -1,5 +1,5 @@
 import useGlobalEvent from './useGlobalEvent'
-import { ref, computed } from '@vue/composition-api'
+import { ref } from '@vue/composition-api'
 
 /**
  * 使用 [Navigator online API](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine)
